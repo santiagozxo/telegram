@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Exclusivo | Acesso Restrito</title>
+    
+    <!-- FAVICON - SUBSTITUA O LINK ABAIXO PELA SUA IMAGEM -->
+    <link rel="icon" type="image/png" href="diamante.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/seu-logo.png">
+    
+    <style>
+        /* RESET E CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* EFEITO DE FUNDO */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, #1a0505 0%, #000000 70%);
+            z-index: -1;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* FOTO DE PERFIL */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff004c;
+            box-shadow: 0 0 20px rgba(255, 0, 76, 0.5);
+            margin-bottom: 20px;
+        }
+
+        /* TEXTOS */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: -webkit-linear-gradient(#fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #cccccc;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* BOTÃO TELEGRAM */
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 136, 204, 0.6);
+            margin-bottom: 40px;
+            border: 2px solid transparent;
+        }
+
+        .telegram-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 136, 204, 0.9);
+            background-color: #0099e6;
+        }
+
+        .telegram-btn span {
+            margin-left: 10px;
+        }
+
+        /* ÍCONES DE BENEFÍCIOS */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            background: #111;
+            padding: 15px;
+            border-radius: 10px;
+            width: 30%;
+            min-width: 100px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+        }
+
+        .feature-item h3 {
+            font-size: 0.9rem;
+            color: #ff004c;
+            margin-bottom: 5px;
+        }
+
+        .feature-item p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        /* RODAPÉ */
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.7rem;
+            color: #555;
+        }
+
+        /* ANIMAÇÃO DE PISCAR */
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 136, 204, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. SUA FOTO AQUI -->
+        <img src="perfil.jpg" alt="Foto da Criadora" class="profile-img">
+
+        <!-- 2. TÍTULO -->
+        <h1>Conteúdo VIP</h1>
+        <p class="subtitle">
+            O que você vê aqui é apenas o começo. <br>
+            Acesse meu canal exclusivo no Telegram para ver o que não tem no Instagram.
+        </p>
+
+        <!-- 3. BOTÃO DE AÇÃO -->
+        <a href="https://t.me/larinhapicante_bot" class="telegram-btn pulse" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z" fill="white"/>
+            </svg>
+            <span>Acessar Bot Agora</span>
+        </a>
+
+        <!-- 4. BENEFÍCIOS -->
+        <div class="features">
+            <div class="feature-item">
+                <h3>🔒 Privado</h3>
+                <p>100% Anônimo</p>
+            </div>
+            <div class="feature-item">
+                <h3>🔥 Exclusivo</h3>
+                <p>Sem censura</p>
+            </div>
+            <div class="feature-item">
+                <h3>💬 Chat</h3>
+                <p>Atendimento direto</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Todos os direitos reservados. +18 Apenas.</p>
+    </footer>
+
+</body>
+</html>
